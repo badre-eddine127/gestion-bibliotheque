@@ -12,3 +12,15 @@ git status
 
 
 
+\## Exécution
+
+
+
+```
+
+python -m bibliotheque.main
+
+```
+
+
+
