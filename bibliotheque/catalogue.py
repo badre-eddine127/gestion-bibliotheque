@@ -27,5 +27,5 @@
         mot = mot.lower()
         return [l for l in self._livres if mot in l.titre.lower()]
 
-    def trier_par_titre(self):
-        return sorted(self._livres, key=lambda l: l.titre)
+    def trier_par_titre(self, inverse=False):
+        return sorted(self._livres, key=lambda l: l.titre, reverse=inverse)
