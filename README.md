@@ -22,5 +22,6 @@ python -m bibliotheque.main
 
 ```
 
+- Recherche par titre, auteur et ISBN
 
 
