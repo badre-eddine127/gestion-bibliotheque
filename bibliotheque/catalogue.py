@@ -1,4 +1,4 @@
-class Bibliotheque:
+﻿class Bibliotheque:
     """Catalogue de livres."""
 
     def __init__(self):
@@ -22,8 +22,7 @@ class Bibliotheque:
 
     def __len__(self):
         return len(self._livres)
-rcher_par_titre(self, mot):
- mot = mot.lower()
- return [l for l in self._livres if mot in l.titre.lower()]
-nibles(self):
- return sum(1 for l in self._livres if l.disponible)
+
+    def rechercher_par_titre(self, mot):
+        mot = mot.lower()
+        return [l for l in self._livres if mot in l.titre.lower()]

@@ -1,4 +1,4 @@
-class Livre:
+﻿class Livre:
     """Un livre du catalogue."""
 
     def __init__(self, isbn, titre, auteur):
@@ -16,5 +16,5 @@ class Livre:
         self.disponible = True
 
     def __str__(self):
-        statut = "disponible" if self.disponible else "emprunté"
-        return f"{self.titre} ({self.auteur}) - {statut}"
+        marque = "+" if self.disponible else "-"
+        return f"[{marque}] {self.titre} - {self.auteur}"
